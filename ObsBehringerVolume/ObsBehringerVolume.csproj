@@ -61,6 +61,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MixingConsole\MixingConsole.csproj">
+      <Project>{0e1b5c6d-a33f-4169-8bf7-e7a69ad2bc32}</Project>
+      <Name>MixingConsole</Name>
+    </ProjectReference>
     <ProjectReference Include="..\X32\BehringerX32.csproj">
       <Project>{12a87a18-a3ed-40e8-8f91-addf41a0b4c6}</Project>
       <Name>BehringerX32</Name>
