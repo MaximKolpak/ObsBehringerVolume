@@ -1,0 +1,18 @@
+C:\Users\Admin\source\repos\Scripter\MixingConsole\bin\Debug\MixingConsole.dll
+C:\Users\Admin\source\repos\Scripter\MixingConsole\bin\Debug\MixingConsole.pdb
+C:\Users\Admin\source\repos\Scripter\MixingConsole\bin\Debug\OSC.dll
+C:\Users\Admin\source\repos\Scripter\MixingConsole\bin\Debug\OSC.pdb
+C:\Users\Admin\source\repos\Scripter\MixingConsole\obj\Debug\MixingConsole.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\Scripter\MixingConsole\obj\Debug\MixingConsole.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Scripter\MixingConsole\obj\Debug\MixingConsole.csproj.CopyComplete
+C:\Users\Admin\source\repos\Scripter\MixingConsole\obj\Debug\MixingConsole.dll
+C:\Users\Admin\source\repos\Scripter\MixingConsole\obj\Debug\MixingConsole.pdb
+D:\Project C#\GitHub\ObsBehringerVolume\MixingConsole\bin\Debug\MixingConsole.dll
+D:\Project C#\GitHub\ObsBehringerVolume\MixingConsole\bin\Debug\MixingConsole.pdb
+D:\Project C#\GitHub\ObsBehringerVolume\MixingConsole\bin\Debug\OSC.dll
+D:\Project C#\GitHub\ObsBehringerVolume\MixingConsole\bin\Debug\OSC.pdb
+D:\Project C#\GitHub\ObsBehringerVolume\MixingConsole\obj\Debug\MixingConsole.csproj.AssemblyReference.cache
+D:\Project C#\GitHub\ObsBehringerVolume\MixingConsole\obj\Debug\MixingConsole.csproj.CoreCompileInputs.cache
+D:\Project C#\GitHub\ObsBehringerVolume\MixingConsole\obj\Debug\MixingConsole.csproj.CopyComplete
+D:\Project C#\GitHub\ObsBehringerVolume\MixingConsole\obj\Debug\MixingConsole.dll
+D:\Project C#\GitHub\ObsBehringerVolume\MixingConsole\obj\Debug\MixingConsole.pdb

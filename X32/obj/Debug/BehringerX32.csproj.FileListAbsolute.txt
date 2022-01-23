@@ -1,0 +1,22 @@
+C:\Users\Admin\source\repos\Scripter\X32\bin\Debug\X32.dll
+C:\Users\Admin\source\repos\Scripter\X32\bin\Debug\X32.pdb
+C:\Users\Admin\source\repos\Scripter\X32\bin\Debug\MixingConsole.dll
+C:\Users\Admin\source\repos\Scripter\X32\bin\Debug\OSC.dll
+C:\Users\Admin\source\repos\Scripter\X32\bin\Debug\MixingConsole.pdb
+C:\Users\Admin\source\repos\Scripter\X32\bin\Debug\OSC.pdb
+C:\Users\Admin\source\repos\Scripter\X32\obj\Debug\BehringerX32.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\Scripter\X32\obj\Debug\BehringerX32.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Scripter\X32\obj\Debug\BehringerX32.csproj.CopyComplete
+C:\Users\Admin\source\repos\Scripter\X32\obj\Debug\X32.dll
+C:\Users\Admin\source\repos\Scripter\X32\obj\Debug\X32.pdb
+D:\Project C#\GitHub\ObsBehringerVolume\X32\obj\Debug\BehringerX32.csproj.AssemblyReference.cache
+D:\Project C#\GitHub\ObsBehringerVolume\X32\obj\Debug\BehringerX32.csproj.CoreCompileInputs.cache
+D:\Project C#\GitHub\ObsBehringerVolume\X32\obj\Debug\X32.dll
+D:\Project C#\GitHub\ObsBehringerVolume\X32\obj\Debug\X32.pdb
+D:\Project C#\GitHub\ObsBehringerVolume\X32\bin\Debug\X32.dll
+D:\Project C#\GitHub\ObsBehringerVolume\X32\bin\Debug\X32.pdb
+D:\Project C#\GitHub\ObsBehringerVolume\X32\bin\Debug\MixingConsole.dll
+D:\Project C#\GitHub\ObsBehringerVolume\X32\bin\Debug\OSC.dll
+D:\Project C#\GitHub\ObsBehringerVolume\X32\bin\Debug\MixingConsole.pdb
+D:\Project C#\GitHub\ObsBehringerVolume\X32\bin\Debug\OSC.pdb
+D:\Project C#\GitHub\ObsBehringerVolume\X32\obj\Debug\BehringerX32.csproj.CopyComplete

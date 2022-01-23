@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{12A87A18-A3ED-40E8-8F91-ADDF41A0B4C6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>X32</RootNamespace>
+    <AssemblyName>X32</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\Base\IX32Control.cs" />
+    <Compile Include="Controls\Base\X32Control.cs" />
+    <Compile Include="Controls\Base\X32FloatDial.cs" />
+    <Compile Include="Controls\Base\X32StringField.cs" />
+    <Compile Include="Controls\Buttons\X32LinkButton.cs" />
+    <Compile Include="Controls\Dials\X32EqFreqDial.cs" />
+    <Compile Include="Controls\Dials\X32EqGainDial.cs" />
+    <Compile Include="Controls\Dials\X32EqQDial.cs" />
+    <Compile Include="Controls\Groups\X32AuxStrip.cs" />
+    <Compile Include="Controls\Groups\X32BusStrip.cs" />
+    <Compile Include="Controls\Groups\X32ChannelStrip.cs" />
+    <Compile Include="Controls\Buttons\X32MonoButton.cs" />
+    <Compile Include="Controls\Faders\X32MonoFader.cs" />
+    <Compile Include="Controls\Groups\X32Compressor.cs" />
+    <Compile Include="Controls\Groups\X32ChannelConfig.cs" />
+    <Compile Include="Controls\Groups\X32InputConfig.cs" />
+    <Compile Include="Controls\Groups\X32Dca.cs" />
+    <Compile Include="Controls\Groups\X32DcaGroup.cs" />
+    <Compile Include="Controls\Groups\X32DcaStrip.cs" />
+    <Compile Include="Controls\Groups\X32Eq.cs" />
+    <Compile Include="Controls\Groups\X32EqBand.cs" />
+    <Compile Include="Controls\Dials\X32PanDial.cs" />
+    <Compile Include="Controls\Buttons\X32StereoLink.cs" />
+    <Compile Include="Controls\Buttons\X32ToggleButton.cs" />
+    <Compile Include="Controls\Groups\X32Filter.cs" />
+    <Compile Include="Controls\Groups\X32FxRtnStrip.cs" />
+    <Compile Include="Controls\Groups\X32FxUnit.cs" />
+    <Compile Include="Controls\Groups\X32Gate.cs" />
+    <Compile Include="Controls\Groups\X32HeadAmp.cs" />
+    <Compile Include="Controls\Groups\X32Insert.cs" />
+    <Compile Include="Controls\Groups\X32LinkConfig.cs" />
+    <Compile Include="Controls\Groups\X32MainOutput.cs" />
+    <Compile Include="Controls\Groups\X32MainStrip.cs" />
+    <Compile Include="Controls\Groups\X32MixerConfig.cs" />
+    <Compile Include="Controls\Groups\X32MonoConfig.cs" />
+    <Compile Include="Controls\Groups\X32Osciallator.cs" />
+    <Compile Include="Controls\Groups\X32Output.cs" />
+    <Compile Include="Controls\Groups\X32Routing.cs" />
+    <Compile Include="Controls\Groups\X32Screen.cs" />
+    <Compile Include="Controls\Groups\X32SoloConfig.cs" />
+    <Compile Include="Controls\Groups\X32TalkbackConfig.cs" />
+    <Compile Include="Controls\Groups\X32TapeConfig.cs" />
+    <Compile Include="Controls\X32Main.cs" />
+    <Compile Include="Controls\X32Matrix.cs" />
+    <Compile Include="Controls\Groups\X32MatrixMix.cs" />
+    <Compile Include="Controls\Groups\X32BusMix.cs" />
+    <Compile Include="Controls\Data\X32TapPoint.cs" />
+    <Compile Include="Controls\Base\X32IntDial.cs" />
+    <Compile Include="Controls\Groups\X32ChannelPreAmp.cs" />
+    <Compile Include="Controls\Groups\X32MatrixStrip.cs" />
+    <Compile Include="Controls\Groups\X32PreAmp.cs" />
+    <Compile Include="Controls\Groups\X32PreAmpDelay.cs" />
+    <Compile Include="Controls\X32Aux.cs" />
+    <Compile Include="Controls\X32Bus.cs" />
+    <Compile Include="Controls\X32Meter.cs" />
+    <Compile Include="Controls\X32Status.cs" />
+    <Compile Include="Helper\RemoteConsole.cs" />
+    <Compile Include="Helper\RemoteOSCServer.cs" />
+    <Compile Include="Controls\X32Channel.cs" />
+    <Compile Include="Helper\X32Packet.cs" />
+    <Compile Include="X32.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controls\Faders\X32Fader.cs" />
+    <Compile Include="Controls\Buttons\X32MuteButton.cs" />
+    <Compile Include="Protocol\X32OSCProtocol.cs" />
+    <Compile Include="X32Console.cs" />
+    <Compile Include="Controls\X32FxRtn.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MixingConsole\MixingConsole.csproj">
+      <Project>{0e1b5c6d-a33f-4169-8bf7-e7a69ad2bc32}</Project>
+      <Name>MixingConsole</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OSC\OSC.csproj">
+      <Project>{5d4c96b6-6ecf-45c0-b9bb-b392d01da045}</Project>
+      <Name>OSC</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

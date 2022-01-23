@@ -12,3 +12,9 @@ D:\Project C#\GitHub\ObsBehringerVolume\ObsBehringerVolume\obj\Debug\ObsBehringe
 D:\Project C#\GitHub\ObsBehringerVolume\ObsBehringerVolume\obj\Debug\ObsBehringerVolume.csproj.CopyComplete
 D:\Project C#\GitHub\ObsBehringerVolume\ObsBehringerVolume\obj\Debug\ObsBehringerVolume.exe
 D:\Project C#\GitHub\ObsBehringerVolume\ObsBehringerVolume\obj\Debug\ObsBehringerVolume.pdb
+D:\Project C#\GitHub\ObsBehringerVolume\ObsBehringerVolume\bin\Debug\X32.dll
+D:\Project C#\GitHub\ObsBehringerVolume\ObsBehringerVolume\bin\Debug\OSC.dll
+D:\Project C#\GitHub\ObsBehringerVolume\ObsBehringerVolume\bin\Debug\MixingConsole.dll
+D:\Project C#\GitHub\ObsBehringerVolume\ObsBehringerVolume\bin\Debug\X32.pdb
+D:\Project C#\GitHub\ObsBehringerVolume\ObsBehringerVolume\bin\Debug\OSC.pdb
+D:\Project C#\GitHub\ObsBehringerVolume\ObsBehringerVolume\bin\Debug\MixingConsole.pdb

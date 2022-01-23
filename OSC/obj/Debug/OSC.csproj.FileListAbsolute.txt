@@ -1,0 +1,11 @@
+C:\Users\Admin\source\repos\Scripter\OSC\bin\Debug\OSC.dll
+C:\Users\Admin\source\repos\Scripter\OSC\bin\Debug\OSC.pdb
+C:\Users\Admin\source\repos\Scripter\OSC\obj\Debug\OSC.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\Scripter\OSC\obj\Debug\OSC.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Scripter\OSC\obj\Debug\OSC.dll
+C:\Users\Admin\source\repos\Scripter\OSC\obj\Debug\OSC.pdb
+D:\Project C#\GitHub\ObsBehringerVolume\OSC\bin\Debug\OSC.dll
+D:\Project C#\GitHub\ObsBehringerVolume\OSC\bin\Debug\OSC.pdb
+D:\Project C#\GitHub\ObsBehringerVolume\OSC\obj\Debug\OSC.csproj.CoreCompileInputs.cache
+D:\Project C#\GitHub\ObsBehringerVolume\OSC\obj\Debug\OSC.dll
+D:\Project C#\GitHub\ObsBehringerVolume\OSC\obj\Debug\OSC.pdb

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0E1B5C6D-A33F-4169-8BF7-E7A69AD2BC32}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MixingConsole</RootNamespace>
+    <AssemblyName>MixingConsole</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Brokering\Base\Broker.cs" />
+    <Compile Include="Brokering\Base\IBroker.cs" />
+    <Compile Include="Brokering\Base\IBrokeredProtocol.cs" />
+    <Compile Include="Brokering\Base\IBrokeredConsumer.cs" />
+    <Compile Include="Brokering\Base\IBrokeredTransport.cs" />
+    <Compile Include="Brokering\Base\ITranslator.cs" />
+    <Compile Include="Brokering\OSC\IOSCConsumer.cs" />
+    <Compile Include="Brokering\OSC\IOSCProtocol.cs" />
+    <Compile Include="Console Controls\ConsoleControl.cs" />
+    <Compile Include="Console Controls\ConsoleControlGroup.cs" />
+    <Compile Include="Console Controls\ConsoleDial.cs" />
+    <Compile Include="Console Controls\ConsoleEQ.cs" />
+    <Compile Include="Console Controls\ConsoleEQBand.cs" />
+    <Compile Include="Console Controls\ConsoleFloatDial.cs" />
+    <Compile Include="Console Controls\ConsoleIntDial.cs" />
+    <Compile Include="Console Controls\ConsoleStringField.cs" />
+    <Compile Include="Console Controls\IConsoleControl.cs" />
+    <Compile Include="Console Controls\ConsoleButton.cs" />
+    <Compile Include="IMixingConsole.cs" />
+    <Compile Include="Protocol\Base\ConsoleProtocol.cs" />
+    <Compile Include="Protocol\Base\IConsoleProtocol.cs" />
+    <Compile Include="Console Controls\ConsoleChannel.cs" />
+    <Compile Include="Console Controls\ConsoleFader.cs" />
+    <Compile Include="MixingConsole.cs" />
+    <Compile Include="NetworkedMixingConsole.cs" />
+    <Compile Include="Protocol\OSC\OSCConsoleConverter.cs" />
+    <Compile Include="Protocol\OSC\OSCProtocol.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transport Layer\Base\ITransportLayer.cs" />
+    <Compile Include="Transport Layer\Base\ConsolePacket.cs" />
+    <Compile Include="Transport Layer\Base\TransportLayer.cs" />
+    <Compile Include="Transport Layer\UDP\UDPTransportLayer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OSC\OSC.csproj">
+      <Project>{5d4c96b6-6ecf-45c0-b9bb-b392d01da045}</Project>
+      <Name>OSC</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
