@@ -55,6 +55,8 @@
     <Compile Include="Functions\X32ConnectCheck.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setup\ListChannel.cs" />
+    <Compile Include="Setup\ParamSetup.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -64,6 +66,10 @@
     <ProjectReference Include="..\MixingConsole\MixingConsole.csproj">
       <Project>{0e1b5c6d-a33f-4169-8bf7-e7a69ad2bc32}</Project>
       <Name>MixingConsole</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OSC\OSC.csproj">
+      <Project>{5d4c96b6-6ecf-45c0-b9bb-b392d01da045}</Project>
+      <Name>OSC</Name>
     </ProjectReference>
     <ProjectReference Include="..\X32\BehringerX32.csproj">
       <Project>{12a87a18-a3ed-40e8-8f91-addf41a0b4c6}</Project>

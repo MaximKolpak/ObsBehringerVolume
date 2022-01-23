@@ -40,12 +40,13 @@ namespace ObsBehringerVolume.Functions
                 {
                     _socket.Receive(_buffer);
                     Connect?.Invoke(this, true);
+                    Console.WriteLine($"[X32] ConnectSuccess");
                     string recive = Encoding.UTF8.GetString(_buffer);
                 }
-                catch(Exception ex)
+                catch
                 {
                     Connect?.Invoke(this, false);
-                    Console.WriteLine($"Error : {ex.Message}");
+                    Console.WriteLine($"[X32] AwaitConnect");
                 }
                 Thread.Sleep(_sleep);
             }
