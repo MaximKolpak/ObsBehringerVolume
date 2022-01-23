@@ -1,0 +1,14 @@
+D:\Project C#\GitHub\ObsBehringerVolume\ObsBehringerVolume\bin\Debug\ObsBehringerVolume.exe.config
+D:\Project C#\GitHub\ObsBehringerVolume\ObsBehringerVolume\bin\Debug\ObsBehringerVolume.exe
+D:\Project C#\GitHub\ObsBehringerVolume\ObsBehringerVolume\bin\Debug\ObsBehringerVolume.pdb
+D:\Project C#\GitHub\ObsBehringerVolume\ObsBehringerVolume\bin\Debug\Newtonsoft.Json.dll
+D:\Project C#\GitHub\ObsBehringerVolume\ObsBehringerVolume\bin\Debug\obs-websocket-dotnet.dll
+D:\Project C#\GitHub\ObsBehringerVolume\ObsBehringerVolume\bin\Debug\websocket-sharp.dll
+D:\Project C#\GitHub\ObsBehringerVolume\ObsBehringerVolume\bin\Debug\Newtonsoft.Json.xml
+D:\Project C#\GitHub\ObsBehringerVolume\ObsBehringerVolume\bin\Debug\obs-websocket-dotnet.xml
+D:\Project C#\GitHub\ObsBehringerVolume\ObsBehringerVolume\bin\Debug\websocket-sharp.xml
+D:\Project C#\GitHub\ObsBehringerVolume\ObsBehringerVolume\obj\Debug\ObsBehringerVolume.csproj.AssemblyReference.cache
+D:\Project C#\GitHub\ObsBehringerVolume\ObsBehringerVolume\obj\Debug\ObsBehringerVolume.csproj.CoreCompileInputs.cache
+D:\Project C#\GitHub\ObsBehringerVolume\ObsBehringerVolume\obj\Debug\ObsBehringerVolume.csproj.CopyComplete
+D:\Project C#\GitHub\ObsBehringerVolume\ObsBehringerVolume\obj\Debug\ObsBehringerVolume.exe
+D:\Project C#\GitHub\ObsBehringerVolume\ObsBehringerVolume\obj\Debug\ObsBehringerVolume.pdb
