@@ -8,7 +8,7 @@ namespace ObsBehringerVolume.Setup
 {
     public class ListChannel
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         public int Value{ get; set; }
     }
 }

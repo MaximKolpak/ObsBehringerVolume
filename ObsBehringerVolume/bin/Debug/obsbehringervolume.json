@@ -7,5 +7,6 @@
     "obsminVolume": 0.7,
     "ipMixer": "192.168.31.172",
     "portMixer": 10023,
-    "channelId": ["01","02","03","04"]
+    "channelId": [0,1,2,3],
+    "hideConsole": true
 }

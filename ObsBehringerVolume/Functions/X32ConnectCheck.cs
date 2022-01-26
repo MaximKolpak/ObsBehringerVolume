@@ -16,6 +16,7 @@ namespace ObsBehringerVolume.Functions
         private int _sleep;
 
         private Socket _socket;
+        private bool _connect = false;
 
         public X32ConnectCheck(string ipAdress, int Port, int Timeout = 1000, int Sleep = 3000)
         {
@@ -40,13 +41,15 @@ namespace ObsBehringerVolume.Functions
                 {
                     _socket.Receive(_buffer);
                     Connect?.Invoke(this, true);
-                    Console.WriteLine($"[X32] ConnectSuccess");
+                    if(!_connect) Console.WriteLine($"[X32] ConnectSuccess");
                     string recive = Encoding.UTF8.GetString(_buffer);
+                    _connect = true;
                 }
                 catch
                 {
                     Connect?.Invoke(this, false);
                     Console.WriteLine($"[X32] AwaitConnect");
+                    _connect = false;
                 }
                 Thread.Sleep(_sleep);
             }

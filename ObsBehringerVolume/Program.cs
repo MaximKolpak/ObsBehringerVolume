@@ -12,6 +12,7 @@ using Behringer.X32;
 using System.Net;
 using System.IO;
 using ObsBehringerVolume.Setup;
+using System.Runtime.InteropServices;
 
 namespace ObsBehringerVolume
 {
@@ -31,6 +32,7 @@ namespace ObsBehringerVolume
         {
             string path = CheckSetup();
             paramSetup = JsonConvert.DeserializeObject<ParamSetup>(File.ReadAllText(path));
+            Task.Run(HideConsole);
             SetupListChannels(paramSetup);
             x32check = new X32ConnectCheck(paramSetup.ipMixer, paramSetup.portMixer);
             x32check.Connect += X32check_Connect;
@@ -44,12 +46,32 @@ namespace ObsBehringerVolume
             }
         }
 
+
+        [DllImport("kernel32.dll")]
+        static extern IntPtr GetConsoleWindow();
+
+        [DllImport("user32.dll")]
+        static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+
+        const int SW_HIDE = 0;
+        const int SW_SHOW = 5;
+        private static void HideConsole()
+        {
+            if (paramSetup.hideConsole)
+            {
+                var handle = GetConsoleWindow();
+
+                // Hide
+                ShowWindow(handle, SW_HIDE);
+            }
+        }
+
         private static void SetupListChannels(ParamSetup paramSetup)
         {
             listChannels = new List<ListChannel>();
             if (paramSetup.channelId.Length != 0)
             {
-                foreach (string item in paramSetup.channelId)
+                foreach (int item in paramSetup.channelId)
                 {
                     listChannels.Add(new ListChannel() { Id = item, Value = 0 });
                 }
@@ -79,20 +101,30 @@ namespace ObsBehringerVolume
             mixerConnect = e;
         }
 
+        private static void MuteChannel()
+        {
+            foreach(int id in paramSetup.channelId)
+            {
+                console.Channel[id].Strip.Mute.Value = X32OnOff.Off;
+                console.SendParameter(console.Channel[id].Strip.Mute);
+            }
+        }
+
         private static void Console_OnConnect()
         {
+            MuteChannel();
             console.OnChannelMute += Console_OnChannelMute;
         }
 
         private static void Console_OnChannelMute(object sender, OSC.OSCPacket packet)
         {
-            string auxId = packet.Nodes[2];
+            int auxId = int.Parse(packet.Nodes[2])-1;
             int value = packet.Arguments[0].ToInt();
             if (obsConnect && paramSetup.channelId.Length != 0)
             {
                 try
                 {
-                    string id = paramSetup.channelId.Where(x => x == auxId).First();
+                    int id = paramSetup.channelId.Where(x => x == auxId).First();
                     if (id == auxId)
                         AuxMutted(id, value);
                 }
@@ -100,7 +132,7 @@ namespace ObsBehringerVolume
             }
         }
 
-        private static void AuxMutted(string id, int value)
+        private static void AuxMutted(int id, int value)
         {
             ListChannel channel = listChannels.Where(x => x.Id == id).First();
             channel.Value = value;
@@ -172,10 +204,11 @@ namespace ObsBehringerVolume
                 portMixer = 10023,
                 portObs = 4444,
                 nameVolume = "main",
-                channelId = new string[0],
+                channelId = new int[0],
                 passObs = "",
                 obsmaxVolume = 1f,
-                obsminVolume = 0.7f
+                obsminVolume = 0.7f,
+                hideConsole = false
             };
 
             File.WriteAllText(fileSetup, JsonConvert.SerializeObject(param));

@@ -16,7 +16,7 @@ namespace ObsBehringerVolume.Setup
         public float obsminVolume { get; set; }
         public string ipMixer { get; set; }
         public int portMixer { get; set; }
-        public string[] channelId { get; set; }
-
+        public int[] channelId { get; set; }
+        public bool hideConsole { get; set; }
     }
 }
